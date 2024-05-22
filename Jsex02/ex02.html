@@ -4,84 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="ex02.js"></script>
+    <script defer src="ex02.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="all">
+        <h1>Carrinho de compras 🛒</h1>
         <div class="label">
-            <div class="Cart">
-                <div class="P1">
-                <h1>Carrinho de compras</h1>
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+            <div class="P1">
+                <h3 class="product_name">Cereal Matinal Infantil Original Kelloggs - Sucrilhos 240g</h3>
+                <span id="count-Sucrilhos">0</span>
+                <span class="product_price">R$ 10,90</span> 
+                <div class="all-buttons">
+                    <input type="submit" productid="Sucrilhos" class="button-remove" value="➖" />
+                    <input type="submit" productid="Sucrilhos" class="button-add" value="➕" />
+                </div>
             </div>
             <div class="P1">
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Kit 3 Biscoito Oreo Chocolate Recheado Sabor Baunilha 90g</h3>
+                <span id="count-Oreo">0</span>
+                <span class="product_price">R$ 8,35</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Oreo" class="button-remove" value="➖" />
+                    <input type="submit" productid="Oreo" class="button-add" value="➕" />
+                </div>
             </div>
             <div class="P1">
-                
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Leite Condensado Nestle Moça Integral Lata 395g</h3>
+                <span id="count-Moca">0</span>
+                <span class="product_price">R$ 6,99</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Moca" class="button-remove" value="➖" />
+                    <input type="submit" productid="Moca" class="button-add" value="➕" />
+                </div>
             </div>
             <div class="P1">
-                
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Arroz Branco Tipo 1 Reserva Especial Camil Premium Pacote 5kg</h3>
+                <span id="count-Arroz">0</span>
+                <span class="product_price">R$ 60,99</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Arroz" class="button-remove" value="➖" />
+                    <input type="submit" productid="Arroz" class="button-add" value="➕" />
+                </div>    
             </div>
             <div class="P1">
-                
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Feijão Carioca Cores Kicaldo Em Pacote Sem Glúten 1 Kg</h3>
+                <span id="count-Feijao">0</span>
+                <span class="product_price">R$ 7,98</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Feijao" class="button-remove" value="➖" />
+                    <input type="submit" productid="Feijao" class="button-add" value="➕" />
+                </div>
             </div>
             <div class="P1">
-                
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Leite piracanjuba zero lactose 1L</h3>
+                <span id="count-Leite">0</span>
+                <span class="product_price">R$ 8,05</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Leite" class="button-remove" value="➖" />
+                    <input type="submit" productid="Leite" class="button-add" value="➕" />
+                </div>
             </div>
             <div class="P1">
-                
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Margarina Com Sal Delícia 1Kg</h3>
+                <span id="count-Margarina">0</span>
+                <span class="product_price">R$ 31,90</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Margarina" class="button-remove" value="➖" />
+                    <input type="submit" productid="Margarina" class="button-add" value="➕" />
+                </div>
             </div>
             <div class="P1">
-                
-                <h3 class="product_name">Produto X</h3>
-                <span class="product_price">R$ 99,90</span>
-                <input type="submit" productId="Maça" class="button-add" value="-" />
-                <p>-</p>
-                <input type="submit" productId="Maça" class="button-add" value="+" />
+                <h3 class="product_name">Requeijão Cremoso poços de caldas 400G</h3>
+                <span id="count-Requeijao">0</span>
+                <span class="product_price">R$ 19,90</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Requeijao" class="button-remove" value="➖" />
+                    <input type="submit" productid="Requeijao" class="button-add" value="➕" />
+                </div>
             </div>
+            <div class="P1">
+                <h3 class="product_name">Queijo Mussarela Fatiado Sadia  150g</h3>
+                <span id="count-Queijo">0</span>
+                <span class="product_price">R$ 11,49</span>
+                <div class="all-buttons">
+                    <input type="submit" productid="Queijo" class="button-remove" value="➖" />
+                    <input type="submit" productid="Queijo" class="button-add" value="➕" />
+                </div>
             </div>
-            <a href="ex02_2.html">
-                <button class="button-40" onclick="send()"  role="button">Adicionar</button>                
-            </a>
+            <div class="P1">
+                <h3 class="product_name">Ypê Detergente Líquido Clear 500ml </h3>
+                <span id="count-Detergente">0</span>
+                <span class="product_price">R$ 5,00</span>
+                <div class="all-buttons">    
+                    <input type="submit" productid="Detergente" class="button-remove" value="➖" />
+                    <input type="submit" productid="Detergente" class="button-add" value="➕" />
+                </div>
+            </div>
         </div>
+       
     </div>
-        
 </body>
 </html>
