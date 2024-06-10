@@ -7,3 +7,11 @@ lessons programming 3º year Ds
  3º Criar um formulario armazenar os dados em um objeto e armazenar no LocalStorage 
 
  4º Crie um objeto para descrever um carro com base em atributos (marca, modelo, ano e preço) Alem disso crie uma função que calcule o preço do carro á vista com desconto de 5% e ooutro que calcule o preço prazo com 50% ded entrada e o restante dividido em 12 x 
+
+# Ajax lessons 
+
+ 1º • Criar um website para gerar um cadastro de usuário que tenha: nome, CPF, RG;
+
+    • Criar um conjunto de dados – nome – CPF – RG em outra linguagem por exemplo php para poder usar o Ajax.
+    
+    • Se o nome, CPF ou RG estiver na base, aparecer na tela dinamicamente.

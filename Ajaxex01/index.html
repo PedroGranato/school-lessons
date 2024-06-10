@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisa</title>
+    <script>
+        function Register(str){
+    
+
+    if (str.length == 0){
+        document.getElementById("Name").innerHTML = "";
+        return;
+    }
+    else{
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if (this.readyState == 4 && this.status == 200){
+                document.getElementById("Name").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", "Register.php?q=" + str, true);
+        xmlhttp.send();
+    };
+};
+    </script>
+</head>
+<body>
+    <p><b>Digite um nome ou CPF ou RG para buscar: </b></p>
+    <form ><input type="text" onkeyup="Register(this.value)"></form>
+    <p>Sugestões Por CPF: <span id="CPF"></span></p>
+    <p>Sugestões Por Nome: <span id="Nome"></span></p>
+    <p>Sugestões Por RG: <span id="RG"></span></p>
+    
+</body>
+</html>
